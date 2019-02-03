@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bezier</title>
+        <style>
+            .container {
+                display: inline-block;
+                vertical-align: top;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Bezier Cruves</h1>
+        
+        <div class="container">
+            <canvas id="canvas" width="1200" height="800" style="border:1px solid #000000;">
+            </canvas>
+        </div>
+        <div class="container">
+            <p><b>Curve selector:</b></p>
+
+            <select id="curveSelector" size="8"> 
+            </select>
+            
+            <p></p>
+
+            <button id="btnAddCurve" type="button">Add curve</button>  
+            <button id="btnRemoveSelectedCurve" type="button">Remove selected</button>
+
+            <p style="margin-top:70px"><b>Curve settings:</b></p>
+  
+            <p style="margin.top:20px">Color:</p>
+            <textarea id="curveColorTextArea" rows="1" cols="7"></textarea>
+            <button id="btnApplyColor" type="button">Apply</button>
+
+            <p style="margin.top:20px">Thickness:</p>
+            <textarea id="curveLineWidthTextArea" rows="1" cols="7"></textarea>
+            <button id="btnApplyLineWidth" type="button">Apply</button>
+        </div>
+
+        <p><b>Instructions:</b></p>
+        <p>LEFT MOUSE CLICK (<b>DON'T HOLD</b>) - add new interpolated point or select an existing one.</p>
+
+        <script src="bezier.js"></script> 
+    </body>
+</html> 
